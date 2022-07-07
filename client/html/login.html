@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir='rtl' data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.png" type="image/svg+xml" />
+    <!-- css files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/signup&login.css">
+    <title>تسجيل الدخول</title>
+  </head>
+  <body>
+    <div class="loading">Loading...</div>
+    <!-- Start of  NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="brand-logo">
+        <a class="navbar-brand" href="./">مشاريع التخرج</a>
+        <img src="img/logo.png" alt="" class="logo-img">
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">المشاريع</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/appointments">مواعيد المناقشات</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/about-us">من نحن <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class='wrap-userInfo'>
+        <img id='userImg' src="img/user.png" alt="" class="user-img hide">
+        <div id='userInfo' class='hide'>
+          <p id='userName' class="user-name"></p>
+          <p id='userEmail' class="user-email"></p>
+          <p id='userRole' class="user-role"></p>
+          <button id='logout' class="logout">تسجيل خروج</button>
+        </div>
+      </div>
+      <div id='actions'>
+        <a href='/signup'>
+          <button class="btn btn-outline-success btn-signout my-2 my-sm-0" type="submit">انشاء حساب</button>
+        </a>
+        <a href='/login'>
+          <button class="btn btn-outline-success btn-signin my-2 my-sm-0" type="submit">دخول</button>
+        </a>
+      </div>
+    </nav>
+    <!-- End of NavBar -->
+
+    <div class="aboutus-head ">
+      <h5 class="aboutus-head-h">تسجيل الدخول</h5>
+    </div>
+
+    <main class="wrap-container">
+      <div>
+        <form id="log-in">
+          <p id="error"></p>
+          <div class="input">
+            <label for="username">اسم المستخدم</label>
+            <input type="text" name="username" id="username" placeholder='ادخل الايميل' required />
+          </div>
+          <div class="input">
+            <label for="password">كلمة المرور</label>
+            <div class='wrap-password'>
+              <input type="password" name="password" id="password" placeholder='ادخل كلمة المرور' required />
+              <img id='showPassword' class='show-password' src="../img/closeEye.svg" alt="eye">
+            </div>
+            <span class="forget-password">هل نسيت كلمة المرور؟</span>
+          </div>
+          <p class="switch-login">
+            هل لديك حساب أخر؟ <a href="/signup">انشاء حساب</a>
+          </p>
+          <button>تسجيل دخول</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- start section 5 footer -->
+    <footer class="page-footer section5-footer font-small blue">
+      <div class="container">
+        <div class="row sec5-footer">
+          <div class="footer-brand col-4">
+            <a class="navbar-brand" href="#">مشاريع التخرج</a>
+            <img src="img/logo.png" alt="" class="logo-img">
+          </div>
+          <div class="section5-copyright col-4">2022 @ جميع الحقوق محفوظة</div>
+          <div class="section5-email col-4">
+            <p>name@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="../js/bootstrap/"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/bootstrap/main.js"></script>
+
+    <script src="../js/global.js"></script>
+    <script src="../js/getFetch.js"></script>
+    <script src="../js/postFetch.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

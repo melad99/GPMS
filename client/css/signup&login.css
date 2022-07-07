@@ -1,0 +1,102 @@
+.wrap-container {
+  height: calc(100vh - 230px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+form h2 {
+  font-size: 2.5rem;
+  color: var(--main);
+  margin-bottom: 30px;
+}
+
+form .input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+form .input label {
+  color: var(--font);
+  display: block;
+  align-self: flex-start;
+  margin-bottom: 4px;
+}
+
+form .input input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  color: var(--font);
+  border: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+form .input input:focus {
+  border: 1px solid var(--main);
+}
+
+form button {
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 150px;
+  background-color: var(--main);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wrap-password {
+  position: relative;
+}
+
+.show-password {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: var(--main);
+  cursor: pointer;
+}
+
+.forget-password {
+  font-size: 0.8rem;
+  text-align: right;
+  margin-top: 5px;
+  color: var(--main);
+  cursor: pointer;
+}
+
+.switch-login {
+  color: var(--font);
+  margin-bottom: 15px;
+}
+
+.switch-login a {
+  color: var(--main);
+}
+
+#error {
+  color: red;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 200px;
+  border-radius: 16px;
+}

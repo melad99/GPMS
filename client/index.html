@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir='rtl' data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.png" type="image/svg+xml" />
+    <!-- css files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>مشاريع التخرج</title>
+  </head>
+  <body>
+    <div class="loading">Loading...</div>
+    <!-- Start of  NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="brand-logo">
+        <a class="navbar-brand" href="./">مشاريع التخرج</a>
+        <img src="img/logo.png" alt="" class="logo-img">
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="./">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">المشاريع</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/appointments">مواعيد المناقشات</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/about-us">من نحن <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class='wrap-userInfo'>
+        <img id='userImg' src="img/user.png" alt="" class="user-img hide">
+        <div id='userInfo' class='hide'>
+          <p id='userName' class="user-name"></p>
+          <p id='userEmail' class="user-email"></p>
+          <p id='userRole' class="user-role"></p>
+          <a id='userLink' class="user-link" href=''>لوحة التحكم</a>
+          <button id='logout' class="logout">تسجيل خروج</button>
+        </div>
+      </div>
+      <div id='actions'>
+        <a href='/signup'>
+          <button class="btn btn-outline-success btn-signout my-2 my-sm-0" type="submit">انشاء حساب</button>
+        </a>
+        <a href='/login'>
+          <button class="btn btn-outline-success btn-signin my-2 my-sm-0" type="submit">دخول</button>
+        </a>
+      </div>
+    </nav>
+    <!-- End of NavBar -->
+
+    <!-- start section 1 -->
+    <div class="section-1">
+
+      <div class="container">
+        <div class="row">
+          <div class="section1-title col-12">!اوجد فكرتك بسهولة</div>
+          <div class="section1-p col-12">ما تشيل هم تكرار الفكرة جمعنا المشاريع بمكان واحد</div>
+          <div class="section1-search">
+            <form class="section1-form">
+              <input class="form-control mr-sm-2" type="search" placeholder="بحث باسم المشروع" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href='/projects'>بحث</a></button>
+            </form>
+          </div>
+          <div class="w-100"></div>
+          <!-- <div class="col">
+                <img src="img/section1-right.png" alt="">
+            </divclass>
+            <div class="col">
+                <img src="img/section1-left.png" alt="">
+            </div>  -->
+        </div>
+
+      </div>
+      <div class="col-12 img-btn-img">
+        <div class=" section1-imgleft col-4">
+          <img src="img/section1-left.png" alt="">
+        </div>
+        <div class="sec1-button col-4">
+          <button class="section1-btn btn"><a href='/login'>بدء مشروع</a></button>
+          <!-- <button class=" section1-btn btn">بدء مشروع</button> -->
+        </div>
+        <div class=" section1-imgright col-4 ">
+          <img src="img/section1-right.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- end section 1 -->
+
+    <!-- start section 2 -->
+    <div class="container">
+      <div class="row">
+        <div class="section2-title col">المشاريع</div>
+        <div class="section2-cards col-12">
+          <div class="section2-card1 ml-4 col-6">
+            <div class="sec2-img-back">
+              <img src="img/section2-img1.png" alt="">
+            </div>
+            <div class="section2-titles">
+              <button class="sec2-h">المشاريع الحالية</button>
+              <p class="sec2-p">جاري العمل عليها </p>
+            </div>
+          </div>
+          <div class="section2-card1  col-6">
+            <div class="sec2-img-back">
+              <img src="img/section2-img1.png" alt="">
+            </div>
+            <div class="section2-titles">
+              <button class="sec2-h">المشاريع الحالية</button>
+              <p class="sec2-p">جاري العمل عليها </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section 2 -->
+
+    <!-- start section 3 -->
+    <div class="section-3">
+      <div class="container">
+        <div class="row">
+          <div class="col section3-h1-title">
+            <h1>كيف يعمل نظامنا</h1>
+          </div>
+
+          <div class="section3-card  section3-card1 col-12">
+            <div class="sec3-img">
+              <img src="img/section3-circle1.png" alt="">
+            </div>
+            <div class="section3-titles">
+              <h5 class="sec3-h">بدء مشروع</h5>
+              <p class="sec3-p">سجل مشروعك كطالب</p>
+            </div>
+          </div>
+
+          <div class="section3-card  section3-card2 col-12">
+            <div class="sec3-img">
+              <img src="img/section3-circle2.png" alt="">
+            </div>
+            <div class="section3-titles">
+              <h5 class="sec3-h">ادارة المشروع</h5>
+              <p class="sec3-p">سجل مشروعك كطالب</p>
+            </div>
+          </div>
+
+          <div class="section3-card  section3-card3 col-12">
+            <div class="sec3-img">
+              <img src="img/section3-circle3.png" alt="">
+            </div>
+            <div class="section3-titles">
+              <h5 class="sec3-h">انهاء المشروع</h5>
+              <p class="sec3-p">سجل مشروعك كطالب</p>
+            </div>
+          </div>
+          <div class="section3-connect">
+            <img src="img/section3-arrow.png" alt="">
+          </div>
+          <div class="section3-img-draw">
+            <img src="img/section3-draw.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end section 3 -->
+
+    <!-- start section 4  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 section4-allcards">
+          <div class="section4-card1 ml-0 col-4">
+            <div class="sec4-img-back">
+              <img src="img/section2-img1.png" alt="">
+            </div>
+            <div class="section4-titles">
+              <h5 class="sec4-h">قوائم مهام</h5>
+              <p class="sec4-p">أنشئ عدد لا محدود من قوائم المهام وشاركها بسهولة مع فريق عملك</p>
+            </div>
+          </div>
+
+          <div class="section4-card1 ml-4 col-4">
+            <div class="sec4-img-back">
+              <img src="img/section2-img1.png" alt="">
+            </div>
+            <div class="section4-titles">
+              <h5 class="sec4-h">مشاركة ملفات</h5>
+              <p class="sec4-p">جميع ملفات مشروعك في مكان واحد ارفع ملفات العمل بكافة أنواعها،</p>
+            </div>
+          </div>
+
+          <div class="section4-card1 ml-4 col-4">
+            <div class="sec4-img-back">
+              <img src="img/section2-img1.png" alt="">
+            </div>
+            <div class="section4-titles">
+              <h5 class="sec4-h">ملاحظات ومستندات</h5>
+              <p class="sec4-p">اكتب المستندات ودوّن الملاحظات التي تحتاجهاالتي تحتاجها باستخدام محرر متقدم</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section 4  -->
+
+    <!-- start section 5 footer -->
+    <footer class="page-footer section5-footer font-small blue">
+      <div class="container">
+        <div class="row sec5-footer">
+          <div class="footer-brand col-4">
+            <a class="navbar-brand" href="#">مشاريع التخرج</a>
+            <img src="img/logo.png" alt="" class="logo-img">
+          </div>
+          <div class="section5-copyright col-4">2022 @ جميع الحقوق محفوظة</div>
+          <div class="section5-email col-4">
+            <p>name@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/bootstrap/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/main.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/getFetch.js"></script>
+    <script src="js/postFetch.js"></script>
+    <!-- <script src="../js/home.js"></script> -->
+  </body>
+</html>

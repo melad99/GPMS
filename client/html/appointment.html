@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir='rtl' data-theme="light">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link rel="icon" href="../img/favicon.png" type="image/svg+xml" />
+		<!-- css files -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>مواعيد المناقشات</title>
+	</head>
+
+	<body>
+		<div class="loading">Loading...</div>
+		<!-- Start of  NavBar -->
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="brand-logo">
+				<img src="../img/logo.png" alt="" class="logo-img">
+				<a class="navbar-brand" href="./">مشاريع التخرج</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="./">الرئيسية</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/projects">المشاريع</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/appointments">مواعيد المناقشات</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="/about-us">من نحن <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class='wrap-userInfo'>
+				<img id='userImg' src="../img/user.png" alt="" class="user-img hide">
+				<div id='userInfo' class='hide'>
+					<p id='userName' class="user-name"></p>
+					<p id='userEmail' class="user-email"></p>
+					<p id='userRole' class="user-role"></p>
+					<button id='logout' class="logout">تسجيل خروج</button>
+				</div>
+			</div>
+			<div id='actions'>
+				<a href='/signup'>
+					<button class="btn btn-outline-success btn-signout my-2 my-sm-0" type="submit">انشاء حساب</button>
+				</a>
+				<a href='/login'>
+					<button class="btn btn-outline-success btn-signin my-2 my-sm-0" type="submit">دخول</button>
+				</a>
+			</div>
+		</nav>
+		<!-- End of NavBar -->
+
+		<!-- start header section -->
+
+		<!-- head appointment title -->
+		<div class="appointment-head ">
+			<h5 class="appointment-head-h">مواعيد المناقشات</h5>
+		</div>
+		<!-- end appointment title -->
+
+		<!-- start main appointment section -->
+		<div class="container container-box">
+			<div class="row">
+				<div class="appointment-right-cards col-3 ">
+					<form class="right-card-form">
+						<div class="right-radio-appointment">
+							<div class="appointment-h-right">المواعيد</div>
+							<div class="radio-appointment">
+								<input type="radio" name="appointment" value='all' id="r1" checked>
+								<label for="r1">جميع المواعيد </label>
+							</div>
+							<div class="radio-appointment">
+								<input type="radio" name="appointment" value='today' id="r2">
+								<label for="r2">اليوم</label>
+							</div>
+							<div class="radio-appointment">
+								<input type="radio" name="appointment" value='tomorrow' id="r3">
+								<label for="r3">غدا</label>
+							</div>
+							<div class="radio-appointment">
+								<input type="radio" name="appointment" value='week' id="r4">
+								<label for="r4">الاسبوع القادم</label>
+							</div>
+							<div class="radio-appointment">
+								<input type="radio" name="appointment" value='month' id="r5">
+								<label for="r5">الشهر القادم</label>
+							</div>
+						</div>
+						<div class="date-appointment">
+							<label for="date">التاريخ</label><br>
+							<input placeholder="ادخل التاريخ" name="date" id="date">
+						</div>
+						<div class="time-appointment">
+							<label for="time">الوقت</label><br>
+							<input placeholder="ادخل الوقت" name="time" id="time" step='1'>
+						</div>
+					</form>
+				</div>
+				<div id='appointments-list' class='col-8'>
+					<template id="appointment-template">
+						<div class="appointment-left-card col-8">
+							<div class="appointment-left-h">
+								<a class="appointment-left-a" href=''></a>
+							</div>
+							<div class="appointment-left-p"></div>
+							<div class="details-appointment-left">
+								<div class="date-icon">
+									<img src="img/Calendar.svg" alt="">
+									<span id='date'></span>
+								</div>
+								<div class="time-icon">
+									<img src="img/Time.svg" alt="">
+									<span id='time'></span>
+								</div>
+								<div class="location-icon">
+									<img src="img/location.svg" alt="">
+									<span id='place'></span>
+								</div>
+							</div>
+						</div>
+					</template>
+				</div>
+			</div>
+		</div>
+
+		<!-- start section 5 footer -->
+		<footer class="page-footer section5-footer font-small blue">
+			<div class="container">
+				<div class="row sec5-footer">
+					<div class="footer-brand col-4">
+						<a class="navbar-brand" href="#">مشاريع التخرج</a>
+						<img src="img/logo.png" alt="" class="logo-img">
+					</div>
+					<div class="section5-copyright col-4">2022 @ جميع الحقوق محفوظة</div>
+					<div class="section5-email col-4">
+						<p>name@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		<script src="../js/bootstrap/bootstrap.min.js"></script>
+		<script src="../js/bootstrap/main.js"></script>
+		<script src="../js/global.js"></script>
+		<script src="../js/getFetch.js"></script>
+		<script src="../js/postFetch.js"></script>
+		<script src="../js/appointment.js"></script>
+	</body>
+
+</html>

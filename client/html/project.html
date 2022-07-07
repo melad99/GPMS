@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir='rtl' data-theme="light">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link rel="icon" href="../img/favicon.png" type="image/svg+xml" />
+		<!-- css files -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>صفحة المشروع</title>
+	</head>
+
+	<body>
+		<div class="loading">Loading...</div>
+		<!-- Start of  NavBar -->
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="brand-logo">
+				<img src="../img/logo.png" alt="" class="logo-img">
+				<a class="navbar-brand" href="./">مشاريع التخرج</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="./">الرئيسية</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/projects">المشاريع</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/appointments">مواعيد المناقشات</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="/about-us">من نحن <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class='wrap-userInfo'>
+				<img id='userImg' src="img/user.png" alt="" class="user-img hide">
+				<div id='userInfo' class='hide'>
+					<p id='userName' class="user-name"></p>
+					<p id='userEmail' class="user-email"></p>
+					<p id='userRole' class="user-role"></p>
+					<button id='logout' class="logout">تسجيل خروج</button>
+				</div>
+			</div>
+			<div id='actions'>
+				<a href='/signup'>
+					<button class="btn btn-outline-success btn-signout my-2 my-sm-0" type="submit">انشاء حساب</button>
+				</a>
+				<a href='/login'>
+					<button class="btn btn-outline-success btn-signin my-2 my-sm-0" type="submit">دخول</button>
+				</a>
+			</div>
+		</nav>
+		<!-- End of NavBar -->
+
+		<!-- start header section -->
+
+		<!-- head appointment title -->
+		<div class="projectpage-head ">
+			<h5 class="projectpage-head-h">Graduation Project</h5>
+		</div>
+		<!-- end appointment title -->
+
+		<div class="projectpage-all">
+			<div class="container">
+				<div class="row">
+					<div class="right-projectpage col-9">
+						<div class="projectpage-description col">
+							<h4>الوصف</h4>
+							<p id='project-desc'>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+								النص
+								العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+								التى يولدها التطبيق.
+							</p>
+						</div>
+
+						<div class="projectpage-features col">
+							<h4>المميزات</h4>
+							<p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+								العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+								التى يولدها التطبيق.
+							</p>
+						</div>
+						<div class="projectpage-techniques col">
+							<h4>التقنيات</h4>
+							<div id='techniques' class='projectpage-techniques-edit'>
+								<template id='technique-temp'>
+									<p id='technique-name'>react.js</p>
+								</template>
+							</div>
+						</div>
+					</div>
+
+					<div class="left-projectpage ">
+						<div class="projectpage-supervisor">
+							<h5 class="h-left-projectpage">المشرف</h5>
+							<p id='supervisor-name' class="p-left-projectpage"></p>
+						</div>
+						<div class="projectpage-students">
+							<h5 class="h-left-projectpage">الطلاب</h5>
+							<div id='students'>
+								<template id='students-temp'>
+									<p id='students-name' class="p-left-projectpage"></p>
+								</template>
+							</div>
+						</div>
+						<div class="projectpage-major">
+							<h class="h-left-projectpage">التخصص</h>
+							<p class="p-left-projectpage">هندسة البرمجيات</p>
+						</div>
+						<div class="projectpage-rate">
+							<h5 class="h-left-projectpage">التقييم</h5>
+							<p id='project-rating' class="p-left-projectpage">امتياز</pc>
+						</div>
+						<div class="projectpage-file">
+							<h5 class="h-left-projectpage">رابط الملف</h5>
+							<a id='project-link' class="p-left-projectpage" href="#"> لينك الملف</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- start section 5 footer -->
+		<footer class="page-footer section5-footer font-small blue">
+			<div class="container">
+				<div class="row sec5-footer">
+					<div class="footer-brand col-4">
+						<a class="navbar-brand" href="./">مشاريع التخرج</a>
+						<img src="../img/logo.png" alt="" class="logo-img">
+					</div>
+					<div class="section5-copyright col-4">2022 @ جميع الحقوق محفوظة</div>
+					<div class="section5-email col-4">
+						<p>name@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		<script src="../js/bootstrap/"></script>
+		<script src="../js/bootstrap/bootstrap.min.js"></script>
+		<script src="../js/bootstrap/main.js"></script>
+		<script src="../js/global.js"></script>
+		<script src="../js/getFetch.js"></script>
+		<script src="../js/postFetch.js"></script>
+		<script src="../js/project.js"></script>
+	</body>
+
+</html>

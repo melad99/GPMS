@@ -1,0 +1,4 @@
+DEV_DB_URL=postgres://user:password@localhost:port/nameOfDatabase
+JWT_SECRET=YourSecretKey
+EMAIL=YourEmail
+EMAIL_PASSWORD=YourPassword

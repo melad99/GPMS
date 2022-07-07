@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="/../img/favicon.png" type="image/svg+xml" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/../fontawesome/css/all.css">
+    <!-- css files -->
+    <link rel="stylesheet" href="/../css/bootstrap.min.css">
+    <link rel="stylesheet" href="/../css/global.css">
+    <link rel="stylesheet" href="/../css/style.css">
+    <link rel="stylesheet" href="/../css/dashborad.css">
+    <link rel="stylesheet" href="/../css/dragula.css">
+    <title>المشروع</title>
+  </head>
+  <body>
+    <div class="loading">Loading...</div>
+    <div class="row">
+      <div class="right-currentproject col-3">
+        <div class="title-currentproject">
+          <img src="/../img/logo.png" alt="" class="logo-img">
+          <a class="navbar-brand" href="#">مشاريع التخرج</a>
+        </div>
+        <div class="currentproject-menu">
+          <a class="home-current" href="/supervisor-dashboard"><img src="/../img/Home.png" alt=""> الرئيسية</a>
+          <a class="current-current" href="/dashboard/projects"><img src="/../img/current.png" alt="/"> المشاريع
+            الحالية</a>
+          <a class="done-current" href="/dashboard/old-projects-ld"><img src="/../img/done.png" alt=""> المشاريع
+            السابقة</a>
+          <a class="appointment-current" id="add-appointment"><img src="/../img/addappo.png" alt=""> اضافة
+            موعد</a>
+        </div>
+        <div class="currentproject-logout">
+          <a href=""><img src="/../img/signoutcurrent.png" alt=""> تسجل الخروج</a>
+        </div>
+      </div>
+
+      <div class="left-currentproject col-12">
+        <div class="left-current-up ">
+          <div class="left-current-search ">
+            <form class="section1-form">
+              <img class="mr-2" src="/../img/File_dock_search.svg" alt="">
+              <input class="form-control" type="search" placeholder="البحث عن مهمة" aria-label="Search">
+            </form>
+          </div>
+          <div class="left-current-add">
+            <button class="btn-currentadd" id="add-project"><img id="add-project" src="/../img/addproject.png" alt=""
+                id="add-project">اضافة مشروع</button>
+          </div>
+          <div class="left-current-notification">
+            <button><img src="/../img/notificaion.svg" alt=""></button>
+          </div>
+          <div class="left-current-user">
+            <div class="dropdown">
+              <button style="background: url(/../img/dropimgdown.svg);" onclick="myFunction()" class="dropbtn"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <p>د.محمد</p>
+                <p>m@gmail.com</p>
+                <p>مشرف</p>
+                <a href="#">تسجيل الخروج</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='header-project'>
+          <h5 id='project-name-header'>اسم مشروع التخرج</h5>
+          <div class='links'>
+            <a id='project-data' href=''>بيانات المشروع</a> |
+            <a id='project-link' href=''>رابط المشروع</a> |
+            <a id='project-students' href=''>طلاب المشروع</a>
+          </div>
+        </div>
+
+        <div class='tasks'>
+          <div class="tasks-project">
+            <div class='task-header-wrap'>
+              <h6 class='task-header'>للعمل عليهم</h6>
+              <img class='task-dots' src="/../img/dots.svg" alt="">
+            </div>
+            <div id='tasks-toDo'>
+              <template id='tasks-temp'>
+                <div class="task-card">
+                  <p class='text-task'>تاسك</p>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <div class="tasks-project">
+            <div class='task-header-wrap'>
+              <h6 class='task-header'>تحت العمل</h6>
+              <img class='task-dots' src="/../img/dots.svg" alt="">
+            </div>
+            <div id='tasks-inProgress'></div>
+          </div>
+
+          <div class="tasks-project">
+            <div class='task-header-wrap'>
+              <h6 class='task-header'>تم عملهم</h6>
+              <img class='task-dots' src="/../img/dots.svg" alt="">
+            </div>
+            <div id='tasks-done'></div>
+          </div>
+        </div>
+
+
+        <!-- <div id='supervisor-projects' class="currentproject-project">
+          <template id='supervisor-projects-temp'>
+            <div class="currentproject-card">
+              <button><img src="/../img/filedoc.svg" alt=""><a id='project-name' href=''></a></button>
+            </div>
+          </template>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="bg-modal">
+      <div class="modal-appointment">
+        <div class="modal-appo-close">
+          +
+        </div>
+        <h4>اضافة موعد</h4>
+        <form id='add-appo-form'>
+          <label for="projectSelect">المشروع</label>
+          <select id="projectSelect" name="projectSelect" placeholder="المشروع"></select>
+          <label for="place1">المكان</label>
+          <input type="text" name='place' id="place1" placeholder="المكان"><br>
+          <label for="time1">الموعد</label>
+          <input type="datetime-local" name='time' id="time1" placeholder="الموعد" step='1'>
+          <button id='add-appo-btn' class="btnmodal">اضافة موعد</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="bg-modal-tasks hide">
+      <div class="add-task-modal">
+        <div class='add-task-header'>
+          <h4>اضافة مهمة</h4>
+          <div class="modal-app-close">+</div>
+        </div>
+        <form id='add-task-form'>
+          <label for="p1">الحالة</label>
+          <select name="status" id="p1" placeholder="المشروع">
+            <option value="للعمل عليهم">للعمل عليهم</option>
+            <option value="تحت العمل">تحت العمل</option>
+            <option value="تم عملهم">تم عملهم</option>
+          </select>
+          <label for="place1">النص</label>
+          <textarea type="text" id="place1" name='content' placeholder="النص"></textarea><br>
+          <!-- <a href="" class="btnmodal">اضافة مهمة</a> -->
+          <button id='add-task-btn' class="btnmodal">اضافة مهمة</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="bg-modaladd">
+      <div class="modal-addproject">
+        <div class="modaladd">
+          <div class="modal-addproject-close">
+            +
+          </div>
+          <div class="modal-add-h">اضافة مشروع</div>
+        </div>
+        <div class="modal-status">
+          <div class="btn-group btn-group-toggle modal-status-btn" data-toggle="buttons">
+            <h4 class="modal-status-h">حالة المشروع</h4>
+            <label class="btn btn-primary btn-status active mr-3" for="option1">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked>جديد
+            </label>
+            <label class="btn btn-primary btn-status mr-3 " for="option2">
+              <input type="radio" name="options" id="option2" autocomplete="off"> منتهي
+            </label>
+          </div>
+        </div>
+        <form>
+          <div class="form-row ">
+            <div class="form-group col-md-5 mr-4">
+              <label for="inputEmail4">اسم المشروع</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="اسم المشروع">
+            </div>
+            <div class="form-group col-md-5">
+              <label for="majot">التخصص</label>
+              <input type="text" class="form-control input-major" id="major" placeholder="التخصص">
+            </div>
+          </div>
+          <div class="form-group col-md-11 mr-3">
+            <label for="dexc">وصف المشروع</label>
+            <input type="text" class="form-control" id="desc" placeholder="وصف المشروع">
+          </div>
+          <div class="form-group col-md-11 mr-3">
+            <label for="link1">رابط المشروع</label>
+            <input type="text" class="form-control" id="link1" placeholder="رابط المشروع">
+          </div>
+          <div class="form-group col-md-11 mr-3">
+            <label for="student1">الطلاب </label>
+            <input type="text" class="form-control" id="student" placeholder="الطلاب">
+          </div>
+          <div class="form-group col-md-11 mr-3">
+            <label for="tech1">التقنيات</label>
+            <input type="text" class="form-control" id="tech1" placeholder="التقنيات">
+          </div>
+          <a href="" class="btnmodal-add">اضافة مشروع</a>
+        </form>
+      </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+    <script src="/../js/dragula.js"></script>
+    <script src="/../js/bootstrap/jquery.min.js"></script>
+    <script src="/../js/bootstrap/bootstrap.min.js"></script>
+    <script src="/../js/bootstrap/main.js"></script>
+    <script src="/../js/global.js"></script>
+    <script src="/../js/getFetch.js"></script>
+    <script src="/../js/postFetch.js"></script>
+    <script src="/../js/supervisorProjects.js"></script>
+    <script src="/../js/projectDashboard.js"></script>
+  </body>
+</html>

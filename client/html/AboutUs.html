@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir='rtl' data-theme="light">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link rel="icon" href="../img/favicon.png" type="image/svg+xml" />
+		<!-- css files -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+
+	<body>
+		<div class="loading">Loading...</div>
+		<!-- Start of  NavBar -->
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="brand-logo">
+				<a class="navbar-brand" href="./">مشاريع التخرج</a>
+				<img src="img/logo.png" alt="" class="logo-img">
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="./">الرئيسية</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/projects">المشاريع</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/appointments">مواعيد المناقشات</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="/about-us">من نحن <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class='wrap-userInfo'>
+				<img id='userImg' src="img/user.png" alt="" class="user-img hide">
+				<div id='userInfo' class='hide'>
+					<p id='userName' class="user-name"></p>
+					<p id='userEmail' class="user-email"></p>
+					<p id='userRole' class="user-role"></p>
+					<button id='logout' class="logout">تسجيل خروج</button>
+				</div>
+			</div>
+			<div id='actions'>
+				<a href='/signup'>
+					<button class="btn btn-outline-success btn-signout my-2 my-sm-0" type="submit">انشاء حساب</button>
+				</a>
+				<a href='/login'>
+					<button class="btn btn-outline-success btn-signin my-2 my-sm-0" type="submit">دخول</button>
+				</a>
+			</div>
+		</nav>
+		<!-- End of NavBar -->
+
+		<!-- start about us section  -->
+		<div class="aboutus-head ">
+			<h5 class="aboutus-head-h">من نحن</h5>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="aboutus-img col-12">
+					<img src="img/aboutus-img.png" alt="">
+				</div>
+				<!-- <div class="aboutus-p col-12">
+					<p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
+						يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+						التطبيق.
+						إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن
+						يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج
+						العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+						ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى
+						أن يوفر على المصمم عناء البحث عن نص بديل</p>
+				</div> -->
+				<div class="aboutus-p col-12">
+					<p>أنشئ عدد لا محدود من قوائم المهام وشاركها بسهولة مع فريق عملك. أسند المهام لأعضاء فريقك، وتتبع تقدم العمل
+						على لوح كانبان بسحب وافلات المهمة من قائمة الى أخرى.
+						جميع ملفات مشروعك في مكان واحد، ارفع ملفات العمل بكافة أنواعها، نظمها في مجلدات، وشاركها بأمان مع فريق العمل
+						دون الحاجة لخدمات خارجية.
+						اكتب المستندات ودوّن الملاحظات التي تحتاجها باستخدام محرر متقدم وتعاون مع فريق عملك بشكل أفضل وأبسط من أي
+						وقت مضى.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- start section 5 footer -->
+		<footer class="page-footer section5-footer font-small blue">
+			<div class="container">
+				<div class="row sec5-footer">
+					<div class="footer-brand col-4">
+						<a class="navbar-brand" href="#">مشاريع التخرج</a>
+						<img src="img/logo.png" alt="" class="logo-img">
+					</div>
+					<div class="section5-copyright col-4">2022 @ جميع الحقوق محفوظة</div>
+					<div class="section5-email col-4">
+						<p>name@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		<!-- end about us section  -->
+
+		<script src="../js/bootstrap/jquery.min.js"></script>
+		<script src="../js/bootstrap/bootstrap.min.js"></script>
+		<script src="../js/bootstrap/main.js"></script>
+		<script src="../js/global.js"></script>
+		<script src="js/getFetch.js"></script>
+		<script src="js/postFetch.js"></script>
+	</body>
+
+</html>

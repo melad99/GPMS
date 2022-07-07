@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link rel="icon" href="../img/favicon.png" type="image/svg+xml" />
+		<!-- css files -->
+		<link rel="stylesheet" href="../fontawesome/css/all.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>بحث المشاريع</title>
+	</head>
+
+	<body>
+		<div class="loading">Loading...</div>
+		<!-- Start of  NavBar -->
+		<nav class="navbar navbar-expand-lg navbar-light ">
+			<div class="brand-logo">
+				<img src="../img/logo.png" alt="" class="logo-img">
+				<a class="navbar-brand" href="./">مشاريع التخرج</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="./">الرئيسية</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/projects">المشاريع</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/appointments">مواعيد المناقشات</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="/about-us">من نحن <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class='wrap-userInfo'>
+				<img id='userImg' src="../img/user.png" alt="" class="user-img hide">
+				<div id='userInfo' class='hide'>
+					<p id='userName' class="user-name"></p>
+					<p id='userEmail' class="user-email"></p>
+					<p id='userRole' class="user-role"></p>
+					<button id='logout' class="logout">تسجيل خروج</button>
+				</div>
+			</div>
+			<div id='actions'>
+				<a href='/signup'>
+					<button class="btn btn-outline-success btn-signout my-2 my-sm-0" type="submit">انشاء حساب</button>
+				</a>
+				<a href='/login'>
+					<button class="btn btn-outline-success btn-signin my-2 my-sm-0" type="submit">دخول</button>
+				</a>
+			</div>
+		</nav>
+		<!-- End of NavBar -->
+
+		<!-- head appointment title -->
+		<div class="appointment-head ">
+			<h5 class="appointment-head-h">بحث عن المشاريع</h5>
+		</div>
+		<!-- end appointment title -->
+
+		<!-- start main appointment section -->
+		<div class="container container-box">
+			<div class="row">
+				<div class="appointment-right-cards col-3 ">
+					<form class="right-card-form">
+						<div class="right-radio-appointment">
+							<div class="appointment-h-right">أنواع المشاريع</div>
+							<div class="radio-appointment">
+								<input type="radio" value='all' name="projects" id="all" checked>
+								<label for="all">كل المشاريع</label>
+							</div>
+							<div class="radio-appointment">
+								<input type="radio" value='now' name="projects" id="now">
+								<label for="now">مشاريع حالية</label>
+							</div>
+							<div class="radio-appointment">
+								<input type="radio" value='end' name="projects" id="end">
+								<label for="end">مشاريع منتهية</label>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class='col-8'>
+					<div class="left-current-search-search">
+						<form class="section1-form">
+							<img class="mr-2" src="img/File_dock_search.svg" alt="">
+							<input id='search-input' class="form-control" type="search" placeholder="بحث باسم المشروع"
+								aria-label="Search">
+						</form>
+					</div>
+					<div id='projects-lists'>
+						<template id='projects-template'>
+							<div class="appointment-left-card">
+								<div class="appointment-left-h">
+									<a class="appointment-left-a" href=''></a>
+								</div>
+								<div class="appointment-left-p"></div>
+							</div>
+						</template>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- start section 5 footer -->
+		<footer class="page-footer section5-footer font-small blue">
+			<div class="container">
+				<div class="row sec5-footer">
+					<div class="footer-brand col-4">
+						<a class="navbar-brand" href="#">مشاريع التخرج</a>
+						<img src="img/logo.png" alt="" class="logo-img">
+					</div>
+					<div class="section5-copyright col-4">2022 @ جميع الحقوق محفوظة</div>
+					<div class="section5-email col-4">
+						<p>name@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		<script src="../js/bootstrap/jquery.min.js"></script>
+		<script src="../js/bootstrap/bootstrap.min.js"></script>
+		<!-- <script src="../js/bootstrap/main.js"></script> -->
+		<script src="../js/global.js"></script>
+		<script src="../js/getFetch.js"></script>
+		<script src="../js/postFetch.js"></script>
+		<script src="../js/search.js"></script>
+	</body>
+
+</html>

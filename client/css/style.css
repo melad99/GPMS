@@ -1,0 +1,1002 @@
+/* Navbar */
+.section1-btn a {
+  color: white;
+}
+.brand-logo {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+.navbar-brand {
+  color: #1d1d35;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  margin-right: -1px;
+  font-size: 18px;
+}
+.logo-img {
+  width: 28px;
+  height: 30px;
+  margin-top: 4px;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  margin-left: 30px;
+  color: #1d1d35;
+  font-style: normal;
+}
+
+.form-inline {
+  padding-left: 50px;
+}
+
+.btn-outline-success {
+  border-color: #3751ff;
+  margin-left: 10px;
+}
+.btn-signin {
+  font-size: 16px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  color: #3751ff;
+  width: 100px;
+  border-radius: 150px;
+}
+
+.btn-signout {
+  width: 140px;
+  font-size: 16px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #3751ff;
+  border-radius: 150px;
+}
+/* end navbar */
+
+/* section 1 */
+.section-1 {
+  position: relative;
+  width: 100%;
+  background-color: #f7f8ff;
+}
+
+.section1-title {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section1-p {
+  font-family: "Tajawal", sans-serif;
+  color: #7d7e82;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  word-spacing: 10px;
+  margin-top: 20px;
+}
+
+.section1-search {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.section1-form {
+  box-shadow: 0px 10px 30px rgba(55, 81, 255, 0.1);
+  border-radius: 14px;
+  width: 680px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section1-search .btn {
+  background-color: #f7f8ff;
+  border-color: #f7f8ff;
+  color: #3751ff;
+  width: 120px;
+  height: 50px;
+  border-radius: 12px;
+  margin-right: 15px;
+}
+
+.section1-search .form-control {
+  align-items: center;
+  border: 2px;
+  border-radius: 12px;
+  border: 2px solid #f2f2f2;
+  width: 530px;
+}
+
+.sec1-button {
+  text-align: center;
+  margin-top: 60px;
+}
+.section1-btn {
+  font-size: 16px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #3751ff;
+  border-radius: 150px;
+  width: 150px;
+}
+
+.img-btn-img {
+  display: flex;
+  flex-direction: row;
+}
+.section1-imgs {
+  margin-bottom: 100px;
+}
+.section1-imgright img {
+  margin-left: 100px;
+}
+
+/* end section 1 */
+
+/* start section2 */
+.section2-title {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 30px;
+  color: #1d1d35;
+}
+.section2-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.section2-card1 {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  justify-content: start;
+}
+
+.sec2-h {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  margin: 6px;
+  background: none;
+  border: none;
+  text-align: right;
+  background-color: none;
+  color: #1d1d35;
+}
+
+.sec2-p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  margin-right: 15px;
+  text-align: right;
+  color: #7d7e82;
+}
+.sec2-img-back {
+  width: 70px;
+  height: 70px;
+  background: #f7f8ff;
+  border-radius: 16px;
+  justify-content: center;
+  display: flex;
+  margin-top: 5px;
+  transform: rotate(-0.38deg);
+}
+
+.sec2-img-back img {
+  margin-top: 15px;
+  height: 35px;
+  width: 35px;
+}
+/* end section 2 */
+
+/* start section 3 */
+.section-3 {
+  margin-top: 70px;
+  background-color: #f7f8ff;
+}
+
+.section3-h1-title {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 30px;
+  color: #1d1d35;
+}
+
+.section3-card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.section3-card2 {
+  justify-content: left;
+}
+
+.section3-titles {
+  width: 450px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.sec3-h {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  margin-top: 10px;
+  margin-right: 50px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.sec3-p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-right: 50px;
+  text-align: right;
+  color: #7d7e82;
+}
+
+.sec3-img {
+  z-index: 1;
+  margin-top: -15px;
+  margin-left: -30px;
+}
+
+.sec3-img img {
+  z-index: 1;
+  height: 120px;
+  width: 100px;
+}
+
+.section3-img-draw img {
+  z-index: 1;
+  margin-top: -200px;
+}
+
+.section3-connect img {
+  z-index: 1;
+  margin-top: -420px;
+  margin-right: 480px;
+}
+/* end section 3 */
+
+/* start section 4 */
+
+.section4-allcards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.section4-allcards .ml-4,
+.mx-4 {
+  margin-left: 0 !important;
+}
+.section4-card1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section4-titles {
+  width: 370px;
+  height: 200px;
+  justify-content: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+}
+
+.sec4-h {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  margin-top: 60px;
+  text-align: center;
+  color: #303c38;
+}
+
+.sec4-p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #6d6e71;
+}
+
+.sec4-img-back {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: #f7f8ff;
+  border-radius: 16px;
+  margin-right: 150px;
+  margin-bottom: -30px;
+  z-index: 1;
+}
+
+.sec4-img-back img {
+  margin-top: 15px;
+  height: 35px;
+  width: 35px;
+}
+
+/* end section 4 */
+
+/* page footer */
+.section5-footer {
+  background-color: #f7f8ff;
+  display: flex;
+  height: 70px;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 0;
+  position: relative;
+}
+
+.sec5-footer {
+  margin-top: 30px;
+}
+
+.section5-email {
+  display: flex;
+  justify-content: left;
+  font-family: "Avenir Arabic";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #1d1d35;
+}
+
+.section5-copyright {
+  display: flex;
+  justify-content: center;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #7d7e82;
+}
+
+.footer-brand {
+  display: flex;
+  justify-content: right;
+}
+/* end page footer */
+
+/* ------------------------------------ */
+
+/* start about-us=head */
+.aboutus-head {
+  display: flex;
+  justify-content: right;
+  background: #f7f8ff;
+  height: 70px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.aboutus-head-h {
+  display: flex;
+  justify-content: right;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: right;
+  color: #1d1d35;
+  margin-top: 15px;
+  margin-right: 70px;
+}
+
+.aboutus-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.aboutus-p {
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.aboutus-p p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: #7d7e82;
+}
+/* end about-us head */
+
+/*  start appointment page */
+
+.appointment-head {
+  display: flex;
+  justify-content: right;
+  background: #f7f8ff;
+  height: 70px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.appointment-head-h {
+  display: flex;
+  justify-content: right;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: right;
+  color: #1d1d35;
+  margin-top: 15px;
+  margin-right: 70px;
+}
+
+.container-box {
+  margin-top: 50px;
+}
+.appointment-right-cards {
+  box-sizing: border-box;
+  width: 270px;
+  height: 450px;
+  border: 2px solid #f2f2f2;
+  border-radius: 16px;
+}
+
+.right-card-form {
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.appointment-h-right {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.radio-appointment {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #1d1d35;
+}
+
+.radio-appointment .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.date-appointment {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.date-appointment input {
+  text-align: right;
+  width: 210px;
+  height: 35px;
+  border: 2px solid #f2f2f2;
+  border-radius: 10px;
+}
+
+.date-appointment input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../img/Calendar.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-width: thin;
+}
+
+/* input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-year-field,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field {
+  color: transparent;
+} */
+/* input[type="date"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+  text-align: right;
+  margin-left: 90px;
+} */
+
+/*
+input[type="date"]:focus:before {
+  content: "" !important;
+}
+*/
+
+.time-appointment {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.time-appointment input[type="time"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../img/Time.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-width: thin;
+}
+
+.time-appointment input {
+  text-align: right;
+  width: 210px;
+  height: 35px;
+  border: 2px solid #f2f2f2;
+  border-radius: 10px;
+}
+
+/* input[type="time"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+  text-align: right;
+  margin-left: 80px;
+} */
+/* input[type="date"]:focus:before {
+  content: "" !important;
+} */
+
+.appointment-left-card {
+  box-sizing: border-box;
+  margin-right: 50px;
+  height: 210.67px;
+  text-align: right;
+  border: 2px solid #f2f2f2;
+  border-radius: 16px;
+}
+
+.appointment-left-card:not(:first-child) {
+  margin-top: 15px;
+}
+
+.appointment-left-card:last-child {
+  margin-bottom: 30px;
+}
+
+.appointment-left-h {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 15px;
+  color: #1d1d35;
+}
+
+.appointment-left-p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 15px;
+  color: #7d7e82;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.details-appointment-left {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #7d7e82;
+}
+
+.location-icon {
+  margin-top: 2.5px;
+}
+
+.time-icon {
+  margin-left: 15px;
+}
+.date-icon {
+  margin-left: 15px;
+}
+/*  end appointment page */
+
+/* start ProjectPage Page */
+.projectpage-head {
+  display: flex;
+  justify-content: right;
+  background: #f7f8ff;
+  height: 70px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.projectpage-head-h {
+  display: flex;
+  justify-content: right;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: right;
+  color: #1d1d35;
+  margin-top: 15px;
+  margin-right: 120px;
+}
+
+.projectpage-all {
+  margin-top: 50px;
+}
+.right-projectpage {
+  text-align: right;
+  border: 2px solid #f2f2f2;
+  border-radius: 16px;
+  height: 459.96px;
+}
+
+.projectpage-description {
+  margin-top: 35px;
+}
+.projectpage-description h4 {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.projectpage-description p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: #7d7e82;
+}
+
+.projectpage-features {
+  margin-top: 35px;
+}
+.projectpage-features h4 {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #1d1d35;
+}
+.projectpage-features p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  color: #7d7e82;
+}
+
+.projectpage-techniques {
+  margin-top: 35px;
+}
+.projectpage-techniques h4 {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.projectpage-techniques-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  gap: 10px;
+}
+.projectpage-techniques-edit p {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #3751ff;
+  width: 130px;
+  height: 39px;
+  background: #f7f8ff;
+  border-radius: 150px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.left-projectpage {
+  box-sizing: border-box;
+  width: 255px;
+  margin-right: 30px;
+  height: 550.1px;
+  text-align: right;
+  border: 2px solid #f2f2f2;
+  border-radius: 16px;
+}
+
+.projectpage-supervisor {
+  margin-top: 30px;
+  margin-right: 15px;
+}
+.projectpage-students {
+  margin-top: 30px;
+  margin-right: 15px;
+}
+
+.projectpage-major {
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.projectpage-rate {
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.projectpage-file {
+  margin-right: 15px;
+  margin-top: 30px;
+}
+
+.h-left-projectpage {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.p-left-projectpage {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.top-projectpage {
+  margin-top: 150px;
+}
+/* end ProjectPage Page */
+
+/* search page  */
+.left-current-search-search {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(55, 81, 255, 0.1);
+  border-radius: 14px;
+  height: 50px;
+  /* width: 750px; */
+  /* margin-right: 330px; */
+  margin-right: 50px;
+  margin-bottom: 15px;
+  justify-content: right;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+}
+
+.left-current-search-search .form-control {
+  border: 2px;
+  border-radius: 12px;
+}
+/* end search page  */
+
+/* start task page  */
+.header-project {
+  margin-top: 40px;
+  margin-right: 280px;
+  width: calc(100% - 320px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasks {
+  margin-top: 20px;
+  margin-right: 280px;
+  width: calc(100% - 320px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.tasks-project {
+  width: 32.5%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 15px;
+  text-align: right;
+}
+.task-header {
+}
+
+.task-dots {
+  cursor: pointer;
+}
+.task-header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task-card {
+  background-color: #f7f8fc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.text-task {
+}
+
+.bg-modal-tasks {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  align-items: center;
+  /* display: none; */
+}
+
+.add-task-modal {
+  width: 453.9px;
+  height: 511.58px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: right;
+  padding: 20px;
+  margin-right: 15px;
+}
+
+.add-task-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-app-close {
+  margin-top: 12px;
+  color: #ccd2e3;
+  cursor: pointer;
+  font-size: 42px;
+  transform: rotate(45deg);
+}
+
+.add-task-modal input,
+.add-task-modal select,
+.add-task-modal textarea {
+  padding: 10px;
+  border: 1px solid #ccd2e3;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.add-task-modal textarea {
+  height: 150px;
+}
+
+.hide {
+  display: none;
+}
+/* end task page   */

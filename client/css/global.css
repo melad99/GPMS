@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --background: #f7f8ff;
+  --main: #3751ff;
+  --border: #f2f2f2;
+  --font: #1d1d35;
+  --icon: #ccd2e3;
+  /* --icon: #c9d5e0; */
+  --green: #28c76f;
+  --backGreen: #e5f8ee;
+  --orange: #ff9f43;
+  --backOrange: #fff3e8;
+  --blue: #00adee;
+  --backBlue: #e6f7fd;
+  /* --border: #cccccc; */
+  /* --font: #222222; */
+  /* --icon: #8c8f91; */
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Tajawal", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+select {
+  font-family: "Tajawal", sans-serif;
+}
+
+a {
+  font-family: "Tajawal", sans-serif;
+  color: var(--font);
+  text-decoration: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main);
+}
+
+::selection {
+  background-color: var(--main);
+}
+
+.loading {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.btn:hover {
+  filter: brightness(95%);
+}
+
+.logged {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.user-img {
+  cursor: pointer;
+}
+
+.wrap-userInfo {
+  position: relative;
+}
+
+#userInfo {
+  text-align: right;
+  padding: 30px;
+  color: var(--font);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+#logout {
+  color: red;
+  background-color: white;
+}

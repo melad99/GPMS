@@ -1,0 +1,438 @@
+/* start supervisor projects page */
+.right-currentproject {
+  position: absolute;
+  left: 0.01%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 280px;
+  background: #ffffff;
+  text-align: right;
+  z-index: 100;
+}
+
+.title-currentproject {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.currentproject-menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.currentproject-menu a {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: right;
+  margin-top: 45px;
+  color: #1d1d35;
+}
+
+/* .currentproject-menu a:hover {
+  color: #2a42db;
+      background-color: #6675d6;
+border-radius: 8px;
+opacity: 0.08;
+}
+
+
+.main {
+  margin-left: 160px; 
+  padding: 0px 10px;
+}
+
+.currentproject-menu img:hover{
+  color: #6c7ffa;
+
+}  */
+
+.currentproject-logout {
+  margin-right: 50px;
+  margin-top: 250px;
+}
+
+.currentproject-logout a {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #303c38;
+}
+
+.left-currentproject {
+  position: absolute;
+  left: 0.01%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  z-index: 0;
+  background: #f0eeee;
+}
+
+.left-current-up {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-current-search {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(55, 81, 255, 0.1);
+  border-radius: 14px;
+  height: 50px;
+  width: 680px;
+  margin-top: 20px;
+  margin-right: 280px;
+  justify-content: right;
+}
+
+.left-current-search .form-control {
+  border: 2px;
+  border-radius: 12px;
+}
+
+.left-current-add {
+  margin-top: 23px;
+  margin-right: 30px;
+}
+
+.btn-currentadd {
+  background: #3751ff;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+  height: 45px;
+  width: 170px;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 150px;
+}
+
+.btn-currentadd img {
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.left-current-notification button {
+  background-color: #ffffff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-top: 23px;
+  margin-right: 15px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  padding: 24px;
+  border: none;
+  margin-top: 21px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  text-align: right;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #1d1d35;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.currentproject-project {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 35px;
+  margin-right: 250px;
+}
+
+.currentproject-card {
+  margin-right: 35px;
+}
+
+.currentproject-card button {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 230px;
+  height: 60px;
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  border-style: none;
+  color: #1d1d35;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  align-items: center;
+  display: none;
+}
+
+.modal-appointment {
+  width: 453.9px;
+  height: 511.58px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: right;
+  padding: 20px;
+  margin-right: 15px;
+}
+
+.modal-appointment h4 {
+  font-family: "tajawal";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 40px;
+  color: #1d1d35;
+}
+
+.modal-appointment form {
+  display: flex;
+  flex-direction: column;
+  font-family: "tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  margin-right: 15px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.modal-appointment form input {
+  box-sizing: border-box;
+  width: 370px;
+  height: 50px;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+}
+
+.modal-appointment form select {
+  box-sizing: border-box;
+  width: 370px;
+  height: 50px;
+  margin-bottom: 5px;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+}
+
+.btnmodal {
+  width: 370px;
+  text-align: center;
+  align-items: center;
+  height: 50px;
+  background: #3751ff;
+  border-radius: 50px;
+  font-family: "tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.modal-appo-close {
+  margin-top: 12px;
+  color: #ccd2e3;
+  position: absolute;
+  cursor: pointer;
+  font-size: 42px;
+  transform: rotate(45deg);
+}
+
+.bg-modaladd {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  align-items: center;
+  display: none;
+}
+
+.modal-addproject {
+  position: absolute;
+  width: 700.5px;
+  height: 650px;
+  font-family: "tajawal";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: right;
+  color: #1d1d35;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(29, 29, 53, 0.15);
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.modal-addproject-close {
+  color: #ccd2e3;
+  position: absolute;
+  cursor: pointer;
+  font-size: 42px;
+  transform: rotate(45deg);
+  margin-right: 30px;
+}
+
+.modaladd {
+  margin-top: 30px;
+}
+
+.modal-add-h {
+  font-family: "tajawal";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: right;
+  margin-right: 65px;
+  display: flex;
+  color: #1d1d35;
+}
+
+.modal-status-h {
+  font-family: "tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+  color: #1d1d35;
+}
+
+.modal-status {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.btn-status {
+  background-color: none;
+  background: none;
+  color: #7d7e82;
+  border: none;
+}
+.btn-status:active,
+.btn-status:visited {
+  background: #f7f8ff;
+  border-radius: 8px;
+}
+
+.input-major {
+  width: 323px;
+}
+
+.btn.btn-status:active:hover,
+.btn.btn-status:hover .btn.btn-status:focus {
+  background: #f7f8ff;
+  border-radius: 8px;
+  color: #3751ff;
+}
+
+.btnmodal-add {
+  width: 370px;
+  height: 50px;
+  align-items: center;
+  background: #3751ff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  margin-right: 170px;
+}
+
+.dashboard-img {
+  /* width: 450px;
+  height: 450px; */
+  margin-right: 250px;
+  margin-top: 50px;
+  padding: 0 20px;
+  /* height: 100%; */
+  /* padding: 50px; */
+}
+/* end supervisor projects page */
